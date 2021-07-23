@@ -3,6 +3,6 @@
 #include <QImage>
 class Config;
 
-void uniproc(Config& conf);
+void uniproc(const Config &conf);
 
 #endif // PROCESS_H

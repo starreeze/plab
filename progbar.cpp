@@ -14,21 +14,24 @@ ProgBar::~ProgBar()
 
 void ProgBar::setVal(int cur)
 {
-    if(curVal < maxVal)    curVal = cur;
+    if (curVal < maxVal)
+        curVal = cur;
 }
 
 void ProgBar::finish()
 {
     curVal = maxVal;
-    cout << "\rProgress of " << title << left << setw(40) << ": Done.";
+    cout << "\r" << title << left << setw(40) << ": Done.";
     cout << '\n';
 }
 
 void ProgBar::print() const
 {
     int pos = curVal * len / maxVal, i = 0;
-    cout << "\rProgress of " << title << ": [";
-    for(; i < pos; ++i) cout << '#';
-    for(; i < len; ++i) cout << '.';
+    cout << "\r" << title << ": [";
+    for (; i < pos; ++i)
+        cout << '#';
+    for (; i < len; ++i)
+        cout << '.';
     cout << left << setw(10) << ']';
 }

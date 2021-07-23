@@ -9,6 +9,8 @@ CONFIG -= app_bundle
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
 
+DEFINES += NDEBUG
+
 # You can also make your code fail to compile if it uses deprecated APIs.
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
@@ -28,4 +30,5 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     config.h \
     process.h \
-    progbar.h
+    progbar.h \
+    rgb_proc.h

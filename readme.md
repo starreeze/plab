@@ -2,25 +2,25 @@
 
 Plab for pictures, just like matlab for matrix.
 
-Version 1.0
+Version 1.0.3
 
-Last commit on 27th Jul, 2020.
+Last commit on 23th Jul, 2021.
 
-Copyright (c) 2020 by xsy, GPL v3 LICENSE.
+Copyright (c) 2020~2021 by xsy, GPL v3 LICENSE.
 
 ## Introduction
 
 Plab is a command line based image processing program which helps you modify your pictures. By specifying command line options, you can crop, rotate, mirror, scale the image, or adjust contrast, hue and brightness of it either manually or by using embedded options. You can also directly access ARGB value and change it freely.
 
-The program is entirely developed with Qt and STL in C++, so it is supposed to cross-platform. 
+The program is developed with Qt, so it is supposed to cross-platform.
 
-To some extent, this program is more efficient than most small image processing software on the market; it consumes much less resources and does equal or greater work. For example, when it comes to text enhance, I believe this program is much better than CamScanner and Acrobat. Not believing? See it with your own eyes.
+To some extent, this program is more efficient than most image processing software on the market; it consumes much less resources and does equal or greater work. For example, when it comes to text enhance, I believe this program is much better than CamScanner and Acrobat. Not believing? See it with your own eyes.
 
 
 
 ## Usage
 
-`plab input_source [options [arguments]]`
+`plab input_source [option1 [arguments] [option2 [arguments] ... ]]`
 
 ### Input
 
@@ -74,4 +74,5 @@ Enrich colors. A positive value of 'scale' means enriching, while a negative one
 
 #### -b scale
 
-Adjust brightness. 
+Adjust brightness. A value of 'scale' larger than 1 means brightening, while a negative one means the opposite.
+

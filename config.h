@@ -7,14 +7,15 @@ class Config
 {
     QString src, dst;
     vector<pair<char, vector<QString>>> opts;
-    void setDst(const vector<QString>& args);
+    void setDst(const vector<QString> &args);
+
 public:
     Config(int argc, char *argv[]);
-    const vector<pair<char, vector<QString>>>& getOpt() const;
+    const vector<pair<char, vector<QString>>> &getOpt() const;
     QString getSrc() const;
     QString getDst() const;
-    void setSrc(const QString& src);
-    void setDst(const QString& dst);
+    void setSrc(const QString &src);
+    void setDst(const QString &dst);
 };
 
 #endif // CONFIG_H

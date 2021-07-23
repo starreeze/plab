@@ -8,6 +8,7 @@ class ProgBar
     int len, maxVal, curVal;
     string title;
     void finish();
+
 public:
     ProgBar(string name, int max, int cur = 0, int length = 30);
     ~ProgBar();
