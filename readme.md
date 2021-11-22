@@ -20,13 +20,13 @@ Not believing? See it with your own eyes.
 
 before processing:
 
-<img src="imgs/1.png" alt="1" style="zoom: 33%;" />                                    <img src="imgs/2.jpg" alt="2" style="zoom:25%;" />
+<img src="imgs/2.jpg" alt="2" style="zoom:25%;" />
 
 after processing:
 
-<img src="imgs/out_1.png" alt="3" style="zoom: 33%;" />                                      <img src="imgs/out_2.png" alt="4" style="zoom:25%;" />
+<img src="imgs/out_2.png" alt="4" style="zoom:25%;" />
 
-And the process only takes about 2 seconds on a domestic CPU and occupies less than 50MB of memory.
+And the process only takes about 0.5 seconds on a domestic CPU and occupies less than 50MB of memory. More examples are available in ./imgs .
 
 ## Usage
 
