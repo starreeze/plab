@@ -1,0 +1,6 @@
+.vscode
+test
+Makefile
+Plab
+*.stash
+*.o
