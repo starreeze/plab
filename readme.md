@@ -14,27 +14,19 @@ Plab is a command line based image processing program which helps you modify you
 
 The program is developed with Qt, so it is supposed to cross-platform.
 
-To some extent, this program is more efficient than most image processing software on the market; it consumes much less resources and does equal or greater work. For example, when it comes to [text enhance](####-t intensity {gray/colorful} {pure/mixed}), I believe this program is much better than *CamScanner* and *Acrobat*, especially when dealing with photos shot under bad lightening.
+To some extent, this program is more efficient than most image processing software on the market; it consumes much less resources and does equal or greater work. For example, when it comes to [text enhance](####-t intensity {gray/colorful} {pure/mixed}), I believe this program is much better than _CamScanner_ and _Acrobat_, especially when dealing with photos shot under bad lightening.
 
 Not believing? See it with your own eyes.
 
 before processing:
 
-<img src="imgs/1.png" alt="1" style="zoom: 33%;" />                                <img src="imgs/2.jpg" alt="2" style="zoom:25%;" />
-
-
+<img src="imgs/1.png" alt="1" style="zoom: 33%;" />                                    <img src="imgs/2.jpg" alt="2" style="zoom:25%;" />
 
 after processing:
 
-
-
-<img src="imgs/out_1.png" alt="3" style="zoom: 33%;" />                                <img src="imgs/out_2.png" alt="4" style="zoom:25%;" />
-
-
+<img src="imgs/out_1.png" alt="3" style="zoom: 33%;" />                                      <img src="imgs/out_2.png" alt="4" style="zoom:25%;" />
 
 And the process only takes about 2 seconds on a domestic CPU and occupies less than 50MB of memory.
-
-
 
 ## Usage
 
@@ -117,4 +109,3 @@ Text enhance, the most powerful feature of Plab. It changes vague pictures conta
 'Intensity' is a non-negative integer which specifies intensity of the enhance. Typically a greater intensity means a clearer output, but may yield to unidentified behavior if set too large. The recommended range of intensity is {0,1,2,3}, yet in most cases '2' is the best choice.
 
 You can select arguments in group {bw/gray/colorful} and {pure/mixed} respectively. If your picture is gray or it's ok even if the output is gray, you select 'gray' in the first group; otherwise 'colorful'. 'bw' is a special choice for outputting bitmap which only consists of black(0,0,0) and white(255,255,255), which function is still in experiment state. If your picture only contains text or you do not care about charts or photos in the picture, select 'pure'; otherwise 'mixed'. Plab will automatically choose suitable algorithm to perform the enhance.
-

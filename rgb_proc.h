@@ -4,7 +4,7 @@
 #include <cmath>
 #include <algorithm>
 #include "progbar.h"
-typedef unsigned char Byte;
+typedef unsigned int Byte;
 constexpr int fragsize = 128;
 #define PIX img.pixel(j, i)
 
