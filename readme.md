@@ -90,7 +90,7 @@ Mirror horizontally or vertically.
 
 #### -p lR lG lB uR uG uB tR tG tB
 
-Replace any pixel whose rgb value is between lower_bound (lR,lG,lB) and upper_bound(uR,uG,uB) with target (tR,tG,tB). BETWEEN means all R,G and B value of the pixel is between (lR,lG,lB) and (uR,uG,uB) respectively. For example, (60,150,30) is between (40,150,0) and (60,255,255), while (41,200,200) is not between them.
+Replace any pixel whose rgb value is between lower_bound (lR,lG,lB) and upper_bound(uR,uG,uB) with target (tR,tG,tB). BETWEEN means all R,G and B value of the pixel is between (lR,lG,lB) and (uR,uG,uB) respectively. For example, (60,150,30) is between (40,150,0) and (60,255,255), while (39,200,200) is not between them.
 
 If lower_bound is equal to upper_bound, you can safely omit one of them. In that case, options and arguments should be `-p OR OG OB tR tG tB`.
 
